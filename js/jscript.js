@@ -1,6 +1,6 @@
 //Make sure refresh won't resent the form
-if ( window.history.replaceState ) {
-    window.history.replaceState( null, null, window.location.href );
+if (window.history.replaceState) {
+    window.history.replaceState(null, null, window.location.href);
 }
 
 particlesJS(
@@ -55,138 +55,134 @@ particlesJS(
     );
 
 
+//Shrink the navigation menu on scroll
+var w = $(window).width();
+if (w < 800) {
+    $(".nav-item").click(function () {
+        $("#navbarNav").hide();
+    });
 
+    $(".navbar-toggler").click(function () {
+        $("#navbarNav").show();
+    });
 
+    window.onscroll = function () {
+        scrollFunction();
+    };
+}
 
-
-    //Shrink the navigation menu on scroll
-    var w = $(window).width();
-    if (w<800){
-        $('.nav-item').click(function(){
-            $('#navbarNav').hide();
-        });
-
-        $('.navbar-toggler').click(function(){
-            $('#navbarNav').show();
-        })
-
-        window.onscroll = function() {scrollFunction()};
+// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+function scrollFunction() {
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        document.getElementById("jung").height = "35";
+    } else {
+        document.getElementById("jung").height = "70";
     }
+}
 
-    // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
-    function scrollFunction() {
-        if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-            document.getElementById("jung").height = "35";
-        } else {
-            document.getElementById("jung").height = "70";
-        }
-    }
+//json files
+var zhJson = "content/zh.json";
+var enJson = "content/en.json";
+var lang = enJson;
 
-    //Switch Language
+$(document).ready(function () {
+    loadContent();
+});
 
-        var zhJson = "content/zh.json";
-        var enJson = "content/en.json"
-        var lang = enJson;
-
-        $(document).ready(function(){
-            loadContent();
-        });
-
-        //Based on the chosen language, populate the page with respective json file
-        function loadContent(){
-            $.getJSON(lang, function(data) {
-            //console.log(data.landing['zh']);
-            //Navigation links
-            for (let i=0; i<$(".nav-link").length; i++){
-                $(".nav-link")[i].innerHTML=data.header[i];
-            }
-
-            //Landing taxt
-            $("#landingP")[0].innerHTML=data.landing;
-
-            //Education
-            var schools = data.education.school;
-            $("#edu-heading")[0].innerHTML=data.education.heading;
-            for(let i=0; i<schools.length; i++){
-                $(".school")[i].innerHTML=data.education.school[i].description;
-            }
-
-            //experience
-            $('#exp-heading')[0].innerHTML=data.experience.heading;
-            //experience-work
-            $('#exp-work')[0].innerHTML=data.experience.work.heading;
-            //experience-place
-            var jobs = data.experience.work.jobs;
-            for(let i=0; i<jobs.length; i++){
-                $(".work-title")[i].innerHTML=data.experience.work.jobs[i].title;
-                $(".work-place")[i].innerHTML=data.experience.work.jobs[i].place;
-
-                var duties = data.experience.work.jobs[i].duty;
-                var dutiesHTML = "";
-                for(let k=0; k<duties.length; k++){
-                    dutiesHTML += "<li>" + duties[k] + "</li>";
-                }
-                $(".work-duty")[i].innerHTML=dutiesHTML;
-            }
-
-            //experience-awards
-            $('#exp-awards')[0].innerHTML=data.experience.awards.heading;
-            var awardsItems = data.experience.awards.awardsItem;
-            var awardsHTML = "";
-            for(let i=0; i<awardsItems.length; i++){
-                awardsHTML += "<li>" + awardsItems[i] + "</li>";
-            }
-            $('#awards-list')[0].innerHTML=awardsHTML;
-
-            //experience-presentation
-            $('#exp-presentation')[0].innerHTML=data.experience.presentation.heading;
-            var presentationItems = data.experience.presentation.presentationItem;
-            for(let i=0; i<presentationItems.length; i++){
-                $(".presentation")[i].innerHTML = presentationItems[i];
-            }
-
-            //experience-certificate
-            $('#exp-certification')[0].innerHTML=data.experience.certificate.heading;
-            var certificateItems = data.experience.certificate.certificateItem;
-            var certificateHTML ="";
-            for(let i=0; i<certificateItems.length;i++){
-                certificateHTML += "<li>" + certificateItems[i] + "</li>";
-            }
-            $('#certificate')[0].innerHTML = certificateHTML;
-
-             //Projects
-             $('#project-heading')[0].innerHTML=data.project.heading;
-             var projects = data.project.projects;
-             for(let i=0; i<projects.length; i++){
-                 $(".project-title")[i].innerHTML=projects[i].title;
-                 $(".project-description")[i].innerHTML=projects[i].description;
-             }
-             
-             //About
-             $('#about-heading')[0].innerHTML=data.about.heading;
-             $('#about-description')[0].innerHTML=data.about.description;
-
-             //contact
-             $('#contact-heading')[0].innerHTML=data.contact.heading;
-             $('#contact-msg')[0].innerHTML=data.contact.message;
-             var formLabels = data.contact.formLabel;
-             for(let i=0; i<formLabels.length;i++){
-                 $(".contact-label")[i].innerHTML=formLabels[i];
-             }
-             $('#sendBtn')[0].value=data.contact.sendBtn;
-            
-            });
+//Based on the chosen language, populate the page with respective json file
+function loadContent() {
+    $.getJSON(lang, function (data) {
+        //console.log(data.landing['zh']);
+        //Navigation links
+        for (let i = 0; i < $(".nav-link").length; i++) {
+            $(".nav-link")[i].innerHTML = data.header[i];
         }
 
-        //language switch button
-        function changeL(){
-                var btnL = document.getElementById('btnL');
-                if(lang == enJson){
-                    lang = zhJson;
-                    btnL.innerHTML = "English";
-                }else if(lang == zhJson){
-                    lang = enJson;
-                    btnL.innerHTML = "中文";
-                }
-                loadContent();
+        //Landing taxt
+        $("#landingP")[0].innerHTML = data.landing;
+
+        //Education
+        var schools = data.education.school;
+        $("#edu-heading")[0].innerHTML = data.education.heading;
+        for (let i = 0; i < schools.length; i++) {
+            $(".school")[i].innerHTML = data.education.school[i].description;
+        }
+
+        //experience
+        $("#exp-heading")[0].innerHTML = data.experience.heading;
+        //experience-work
+        $("#exp-work")[0].innerHTML = data.experience.work.heading;
+        //experience-place
+        var jobs = data.experience.work.jobs;
+        for (let i = 0; i < jobs.length; i++) {
+            $(".work-title")[i].innerHTML = data.experience.work.jobs[i].title;
+            $(".work-place")[i].innerHTML = data.experience.work.jobs[i].place;
+
+            var duties = data.experience.work.jobs[i].duty;
+            var dutiesHTML = "";
+            for (let k = 0; k < duties.length; k++) {
+                dutiesHTML += "<li>" + duties[k] + "</li>";
             }
+            $(".work-duty")[i].innerHTML = dutiesHTML;
+        }
+
+        //experience-awards
+        $("#exp-awards")[0].innerHTML = data.experience.awards.heading;
+        var awardsItems = data.experience.awards.awardsItem;
+        var awardsHTML = "";
+        for (let i = 0; i < awardsItems.length; i++) {
+            awardsHTML += "<li>" + awardsItems[i] + "</li>";
+        }
+        $("#awards-list")[0].innerHTML = awardsHTML;
+
+        //experience-presentation
+        $("#exp-presentation")[0].innerHTML = data.experience.presentation.heading;
+        var presentationItems = data.experience.presentation.presentationItem;
+        for (let i = 0; i < presentationItems.length; i++) {
+            $(".presentation")[i].innerHTML = presentationItems[i];
+        }
+
+        //experience-certificate
+        $("#exp-certification")[0].innerHTML = data.experience.certificate.heading;
+        var certificateItems = data.experience.certificate.certificateItem;
+        var certificateHTML = "";
+        for (let i = 0; i < certificateItems.length; i++) {
+            certificateHTML += "<li>" + certificateItems[i] + "</li>";
+        }
+        $("#certificate")[0].innerHTML = certificateHTML;
+
+        //Projects
+        $("#project-heading")[0].innerHTML = data.project.heading;
+        var projects = data.project.projects;
+        for (let i = 0; i < projects.length; i++) {
+            $(".project-title")[i].innerHTML = projects[i].title;
+            $(".project-description")[i].innerHTML = projects[i].description;
+        }
+
+        //About
+        $("#about-heading")[0].innerHTML = data.about.heading;
+        $("#about-description")[0].innerHTML = data.about.description;
+
+        //contact
+        $("#contact-heading")[0].innerHTML = data.contact.heading;
+        $("#contact-msg")[0].innerHTML = data.contact.message;
+        var formLabels = data.contact.formLabel;
+        for (let i = 0; i < formLabels.length; i++) {
+            $(".contact-label")[i].innerHTML = formLabels[i];
+        }
+        $("#sendBtn")[0].value = data.contact.sendBtn;
+    });
+}
+
+//language switch button
+function changeL() {
+    var btnL = document.getElementById("btnL");
+    if (lang == enJson) {
+        lang = zhJson;
+        btnL.innerHTML = "English";
+    } else if (lang == zhJson) {
+        lang = enJson;
+        btnL.innerHTML = "中文";
+    }
+    loadContent();
+}
