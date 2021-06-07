@@ -80,8 +80,7 @@ function scrollFunction() {
     }
 }
 
-//Switch Language
-
+//json files
 var zhJson = "content/zh.json";
 var enJson = "content/en.json";
 var lang = enJson;
