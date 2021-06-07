@@ -1,0 +1,298 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+body{
+    position: relative;
+    margin:0; 
+    font-family: 'Archivo', 'Noto Sans TC',sans-serif; 
+}
+
+h1{
+    font-family: 'Forum', 'Shippori Mincho B1', cursive;
+}
+
+/* ---- menu ---- */
+nav .nav-link{
+    font-family: 'Forum', 'Shippori Mincho B1', cursive;
+    font-size: 1.5rem;
+}
+
+#jung{
+    transition: 0.4s;
+}
+
+/*---- landing ---- */
+.landing{
+    position: relative;
+    width: 100%; 
+    height: 80vh;   
+}
+
+#landing-msg{
+    position: absolute;
+    width: 37%;
+    bottom: 30px;
+    right: 0;
+    background: linear-gradient(
+        45deg,
+        rgba(216, 230, 152, 0.7),
+        rgba(238, 187, 203, 0.7) 100%
+      );
+}
+
+/* ---- Education ---- */
+.flex-edu {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #9FB39F;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 65%;
+}
+
+.flex-item-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 50%;
+}
+
+.flex-item-left img {
+    display: block;
+    width: 60%;
+}
+
+.flex-item-right{
+    display: flex;
+    align-items: center;
+    flex: 50%;
+}
+
+.flex-item-right p {
+    margin: 0;
+}
+
+/* ----experience---- */
+.exp{
+    position: relative;
+}
+
+.exp span, .exp li, .exp p{
+    font-family: 'Archivo Narrow', sans-serif;
+}
+
+.exp h5{
+    font-family: 'Forum','Shippori Mincho B1', cursive;
+    font-weight: 600;
+}
+
+.flex-exp{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+}
+
+.flex-exp-left{
+    flex: 50%;
+}
+
+.flex-exp-right{
+    flex: 50%;
+}
+
+.exp-gradient {
+    position:absolute;
+    bottom: 0;
+    right: 0;
+    font-family: 'Limelight', cursive;
+    letter-spacing: 10px;
+    font-size: 72px;
+    background: -webkit-linear-gradient(60deg, #d8e698 0%, #edd3a1 50%, #eebbcb 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: -5;
+}
+
+/* ----Projects---- */
+.projects-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.upstat{
+    background-color: #eebbcb;
+}
+
+.mmj{
+    background-color: #edd3a1;
+}
+
+.wegmans{
+    background-color: #d8e698;
+}
+
+.projects-flex-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    flex: 50%;
+}
+.projects-flex-left img{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 80%;
+}
+
+.projects-flex-left video {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 40%;
+}
+
+.projects-flex-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    flex: 50%;
+}
+
+.projects-flex-right section{
+    width: 80%;
+}
+
+.projects-flex-right span{
+    font-family: 'Limelight', cursive;
+    font-size: 32px;
+    margin-top: 50px;
+    align-self: flex-end;
+    background: -webkit-linear-gradient(80deg, #95859c 0%, #95859c 50%, #000 50%, #000 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* ---- About ---- */
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0 4px;
+}
+
+.col{
+    flex: 12%;
+    max-width: 12%;
+    padding: 0 4px;
+}
+
+.col-p{
+    max-width: 50%;
+    flex: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.col-p p{
+margin-top: 20px;
+}
+
+.col img{
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+/* ----contact---- */
+.contact-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact-flex-left{
+    width: 60%;
+    flex: 60%;
+}
+
+
+.contact-flex-right{
+    width: 40%;
+    flex: 40%;
+}
+
+.contact ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact iframe{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 200px;
+}
+
+#contact form{
+    width: 70%;
+}
+
+
+
+/* ---- particles.js container ---- */ 
+#particles-js { 
+    position: absolute; 
+    width: 100%; 
+    height: 80vh; 
+    background-color: #B3ADA0; 
+    background-image: url("../img/IMG_0677.JPG"); 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: 50% 35%;
+} 
+
+
+@media (max-width: 800px) {
+    .flex-item-right, .flex-item-left, .flex-exp-left, .flex-exp-right, .projects-flex-left, .projects-flex-right, .contact-flex-left, .contact-flex-right, .contact-flex-center {
+      flex: 100%;
+    }
+
+    .projects-flex-left video{
+        width: 70%;
+    }
+
+    .exp-gradient {
+        bottom: 20%;
+        right: -40%;
+        -ms-transform: rotate(-90deg); /* IE 9 */
+        transform: rotate(-90deg);
+    }
+
+    .col{
+        max-width: 25%;
+    }
+
+    .col-p{
+        flex: 100%;
+        max-width: 80%;
+    }
+
+    #contact form{
+        width: 100%;
+    }
+  }
+
+  @media (max-width: 500px) {
+    #landing-msg{
+        width: 100%;
+    }
+  }

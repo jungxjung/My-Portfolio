@@ -1,0 +1,131 @@
+{
+  "header": [
+    "首頁",
+    "學歷",
+    "經歷",
+    "作品",
+    "關於我",
+    "聯絡我"
+  ],
+  "landing": "陳芝蓉<br>我是一個勇於面對挑戰且不斷精進自己的<b>語言老師</b>和<b>網頁開發工程師</b>。",
+  "education": {
+    "heading": "學歷",
+    "school": [
+      {
+        "name": "NCCU",
+        "description": "2016 <br><b>經濟系學士</b><br>台灣 台北，政治大學"
+      },
+      {
+        "name":"RU",
+        "description": "2015 交換學生<br><b>企管系</b><br>冰島 雷克雅維克，雷克雅維克大學"
+      },
+      {
+        "name":"WashU",
+        "description": "2017 <br><b>WUSTL-ALLEX對外漢語老師訓練</b><br>美國 密蘇里州，聖路易華盛頓大學"
+      },
+      {
+        "name":"RIT",
+        "description": "2021 <br><b>人機互動碩士</b><br><b>進階網頁開發證書</b><br>美國 紐約，羅徹斯特理工學院"
+      }
+    ]
+  },
+  "experience": {
+    "heading": "經歷",
+    "work": {
+      "heading": "工作",
+      "jobs": [
+        {
+          "title": "國際學生聯絡專員",
+          "place": "美國 紐約 RIT | 2019年10月 - 在職中",
+          "duty": [
+            "處理項目申請文件和與申請學生的溝通協調",
+            "安排各專案的活動，例如，安排機場接駁、邀請客座演講者、安排校外參訪行程",
+            "紀錄與分析與個專案相關的數據與資料",
+            "計畫和主持線上學生互動活動"
+          ]
+        },
+        {
+          "title": "中文講師",
+          "place": "美國賓州 Allegheny大學 | 2018年8月 - 2019年6月",
+          "duty" :[
+            "2018秋季，負責指導一門高級中文和一門初級中文",
+            "2019春季中國語言與文化入門課程的設計和指導",
+            "設計及製作初級中文班的上課資料、輔助教材即將課堂學習活動跟時下科技結合"
+          ]
+        },
+        {
+          "title":"中文助教",
+          "place":"美國賓州 Allegheny大學 | 2017年8月 - 2018年8月",
+          "duty":[
+            "主持每週中文高級班、中級班、初級班的練習課程",
+            "組織學校各種文化活動，例如，2018年春節慶祝",
+            "管理校內中文特殊專長宿舍,維持宿舍內良好中文學習環境"
+          ]
+        },
+        {
+          "title":"實習生 台灣愛立信",
+          "place":"2016年12月 - 2017年6月",
+          "duty":[
+            "紀錄專案支出，處理廠商收帳明細,確保收帳明細與訂單相符",
+            "紀錄專案中4000個基地台的施工進度",
+            "協助製作報告的輔助資料,例如,講義和簡報"
+          ]
+        }
+      ]
+    },
+    "awards": {
+      "heading":"得獎紀錄",
+      "awardsItem":[
+        "2019年 Edward David, Class of 1961, Faculty Support Fund",
+        "2018年 Demmler 教學創新獎",
+        "2017年 ALLEX 獎學金得主 (Alliance for Language Learning and Educational Exchange)"
+      ]
+    },
+    "presentation": {
+      "heading":"公開報告",
+      "presentationItem":[
+        "<b>2019 CLTA 年會</b><br>Xiaoling, S., Kaidi, C., Chih-Jung, C. Meeting the Challenges: Cultural Infusion, Digital/Social Media Engagement, And Communal Learning in Chinese Language/Culture Program",
+        "<b>2019 ASIANetwork 27th 年會</b><br>Chih-Jung, C Designing Video Game in the Chinese Classroom"
+      ]
+    },
+    "certificate": {
+      "heading":"證書與資格",
+      "certificateItem":[
+        "國際漢語教師認證 (TCSOL) (2016)",
+        "通過中華民國專門職業及技術人員普通考試領隊人員考試 (2013)"
+      ]
+    }
+  },
+  "project": {
+    "heading": "作品",
+    "projects":[
+      {
+        "title":"UPSTAT - 網站設計",
+        "description": "我與我們的團隊（SpideRIT）為美國統計學協會（American Statistical Association）北紐約州分會的年度會議設計及開發網站。UPSTAT (Upstate New York Statistics Conference)<br>我主要是負責設計資料庫架構。"
+      },
+      {
+        "title":"My Medical Journal - 手機App設計",
+        "description": "My Medical Journal是一個幫助使用者記錄醫生預約、處方籤和個人健康記錄的手機App。我們透過訪問使用者、人物誌和prototype來設計這個App。完整的設計過程可以參考這個網站:<br>🔗<a href='https://ap3673.wixsite.com/mymedicaljournal'>My Medical Journal</a>"
+      },
+      {
+        "title":"Wegmans - 可用性測試",
+        "description":"Wegmans是一個美國東岸的大型連鎖超市，他們在2019年末推出了新版的購物App。 我們與Wegmans的客服經理合作透過使用者訪談與可用性測試蒐集用戶對新版App的意見。我們完成了一份完整的評估報告，其中包含使用者的痛點整理及設計建議。"
+      }
+    ]
+  },
+  "about": {
+    "heading": "關於我",
+    "description": "我是受過專業訓練的👩‍🏫<b>語言老師</b>和💻<b>網頁開發工程師</b>，同時擁有各式各樣千奇百怪的嗜好<br><br>✈️<b>旅行</b>: 我曾經在wifi還不是這麼方便的時候，獨自一人，揹著巨大無比的背包從冰島流浪到義大利。旅行過程中雖然困難重重，但是我也得到值得跟未來孩子炫耀一輩子的滿滿回憶。<br> <br>👩🏼‍🍳<b>烘焙</b>: 烘焙是我的嗜好也是我生活的一部份。我已經許久沒買超市麵包了，因為我總是自己做，我尤其喜歡酸種麵包。我也喜歡烤餅乾、蛋糕、鳳梨酥等等的點心! <br> <br>✏️<b>畫畫</b>: 我喜歡簡簡單單黑與白的鉛筆素描。鉛筆的親民價格、可塗改性、可攜性都相當適合總是在搬家的我。我曾經以200美金的價格賣出一幅我的自畫像，這應該就是我藝術家生涯的顛峰了吧。"
+  },
+  "contact": {
+    "heading": "聯絡我",
+    "message": "認識一下吧! 😁 <br>歡迎加我的Instagram和LinkedIn或是在這裡留個訊息給我，我會儘快回覆你。",
+    "formLabel": [
+      "姓名",
+      "Email",
+      "留言",
+      "寄備份給我"
+    ],
+    "sendBtn":"送出"
+  }
+}

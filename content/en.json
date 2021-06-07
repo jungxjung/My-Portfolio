@@ -1,0 +1,131 @@
+{
+  "header": [
+    "Home",
+    "Education",
+    "Experience",
+    "Projects",
+    "About",
+    "Contact"
+  ],
+  "landing": "CHIH-JUNG CHEN,<br>an experienced <b>language teacher</b> and a <b>web developer</b>, welcomes challenges with open arms and relentlessly strives for a better self.",
+  "education": {
+    "heading": "Education",
+    "school": [
+      {
+        "name": "NCCU",
+        "description": "2016 <br><b>Bachelor of Arts in Economics</b><br>National Chengchi University, Taipei, Taiwan"
+      },
+      {
+        "name": "RU",
+        "description": "2015 Exchange Student<br><b>Business Adminitration</b><br>Reykjavík University, Reykjavík, Iceland"
+      },
+      {
+        "name": "WashU",
+        "description": "2017 <br><b>WUSTL-ALLEX Chinese Teacher Training Institute</b><br>Washington University in St. Louis,  Missouri, US"
+      },
+      {
+        "name": "RIT",
+        "description": "2021 <br><b>Master of Science in Human-Computer Interaction</b><br><b>Web Development Advanced Certificate</b><br>Rochester Institute of Technology, New York, US"
+      }
+    ]
+  },
+  "experience": {
+    "heading": "Experience",
+    "work": {
+      "heading": "Work",
+      "jobs": [
+        {
+          "title": "Global Student Coordinator",
+          "place": "RIT, New York, US | Oct 2019 - Present",
+          "duty": [
+            "Organizing application paperwork and manage communication with participating students",
+            "Coordinating program events such as airport arrivals/departures, speaker events, and field trip activities",
+            "Evaluating and tracking data associated with the programs",
+            "Planning and hosting virtual events for online programs"
+          ]
+        },
+        {
+          "title": "Instructer - Mandarin Chinese",
+          "place": "Allegheny College, Pennsylvania | Aug 2018 - May 2019",
+          "duty": [
+            "Taught 1 Advanced Chinese Class and 1 Beginning Chinese in Fall, 2018",
+            "Designed and conducted 1 Chinese Language and Culture Class in Spring, 2019",
+            "Designed slides, supporting materials and incorporated educational technology in-class activities for Beginning Chinese Class"
+          ]
+        },
+        {
+          "title": "Teaching Assistant - Mandarin Chinese",
+          "place": "Allegheny College, Pennsylvania | Aug 2017 - Aug 2018",
+          "duty": [
+            "Hosted weekly Chinese practice sessions for beginning, intermediate, and advanced class students",
+            "Organized Chinese cultural events such as the 2018 Spring Festival",
+            "Managed and maintained a Chinese learning environment in Chinese Language House"
+          ]
+        },
+        {
+          "title": "Intern, Ericsson Taiwan",
+          "place": "Dec 2016 - Jun 2017",
+          "duty": [
+            "Kept track of project spending, processed invoices, made sure the price amount on the invoices matched the number on our purchase order",
+            "Documented project process on implementing 4000 cell towers",
+            "Assisted in making presentation materials, e.g., handouts, slides"
+          ]
+        }
+      ]
+    },
+    "awards": {
+      "heading": "Awards and Fundings",
+      "awardsItem": [
+        "Edward David, Class of 1961, Faculty Support Fund - 2019",
+        "Demmler Awards for Teaching Innovation - 2018",
+        "Winner of 2017 ALLEX Scholarship (Alliance for Language Learning and Educational Exchange) - 2017"
+      ]
+    },
+    "presentation": {
+      "heading": "Public Presentations",
+      "presentationItem": [
+        "<b>2019 CLTA Annual Conference</b><br>Xiaoling, S., Kaidi, C., Chih-Jung, C. Meeting the Challenges: Cultural Infusion, Digital/Social Media Engagement, And Communal Learning in Chinese Language/Culture Program",
+        "<b>2019 ASIANetwork 27th Annual Conference</b><br>Chih-Jung, C Designing Video Game in the Chinese Classroom"
+      ]
+    },
+    "certificate": {
+      "heading": "Certifications and Qualifications",
+      "certificateItem": [
+        "Certificate of Teachers of Chinese to Speakers of Other Languages (TCSOL) (2016)",
+        "Passed the Professional and Technical Examinations for Tour Guides in Taiwan (2013)"
+      ]
+    }
+  },
+  "project": {
+    "heading": "Projects",
+    "projects": [
+      {
+        "title": "UPSTAT - Web Design",
+        "description": "Our team, SpideRIT, designed and built a website for American Statistical Association, upstate New York region chapter’s annual conference, UPSTAT (Upstate New York Statistics Conference)<br>I was responsible for designing and setting up the database"
+      },
+      {
+        "title": "My Medical Journal",
+        "description": "My Medical Journal is an app that helps users keep track of their doctor appointments, prescriptions, and health history. We designed this app by analyzing data from interviews, generating user personas, and making prototypes. You can see more about our project on this website.<br>🔗<a href='https://ap3673.wixsite.com/mymedicaljournal'>My Medical Journal</a>"
+      },
+      {
+        "title": "Wegmans - Usability Testing",
+        "description": "Wegmans, a grocery chain store in the US, launched a new version of their shopping application in late 2019. We worked with Wegmans’s customer service manager to collect user experiences on the new app through usability testing and user interviews. We provided a full evaluation report and presentation to Wegmans, in which we pointed out pain points that users might have while using the app and design advice."
+      }
+    ]
+  },
+  "about": {
+    "heading": "About",
+    "description": "I am a professionally trained 👩‍🏫<b>language teacher</b> and a 💻<b>web developer</b> with a million hobbies across diverse fields. <br> <br>✈️<b>Traveler</b>: I backpack-traveled from Iceland to Italy. It was tough traveling alone with a massive backpack on you without reliable wifi, but it sure was fun, and I got tons of great memories to tell my grandchildren. <br> <br>👩🏼‍🍳<b>Baker</b>: Baking is my hobby and part of my life. I don't buy bread from grocery stores anymore. I make my own bread, especially sourdough bread. I also bake cookies, cakes, and pineapple pastries (fenglisu)! <br> <br>✏️<b>Drawer</b>: I draw with pencils, simply black and white. Pencils are affordable, erasable with excellent mobility, perfect for a traveler like me. I once sold a self-portrait for 200 USD, which could possibly be the peak of my artist life."
+  },
+  "contact": {
+    "heading": "Contact",
+    "message": "Let's get in touch!😁 <br>Connect with me on social media or leave me a message, and I will get back to you ASAP.",
+    "formLabel": [
+      "Name",
+      "Email address",
+      "Message",
+      "Send me a copy of this message"
+    ],
+    "sendBtn":"sent"
+  }
+}
