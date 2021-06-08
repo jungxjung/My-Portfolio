@@ -178,6 +178,11 @@ nav .nav-link {
 	-webkit-text-fill-color: transparent;
 }
 
+.miscC{
+	width: 100%;
+	background-color: #BCE2E8;
+}
+
 /* ---- About ---- */
 
 .row {
