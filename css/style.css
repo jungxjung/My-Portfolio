@@ -193,8 +193,17 @@ nav .nav-link {
 	color: #4f4f4f;
 }
 
+.miscA:visited{
+	color: #4f4f4f;
+}
+
 .miscA:hover{
 	color: #000;
+}
+
+
+.miscA:active{
+	color: #4f4f4f;
 }
 
 .miscA i{
@@ -209,7 +218,7 @@ nav .nav-link {
 #miscspan span{
 	font-family: 'Limelight', cursive;
 	font-size: 32px;
-	background: -webkit-linear-gradient(85deg, #95859c 0%, #95859c 50%, #000 50%, #000 100%);
+	background: -webkit-linear-gradient(88deg, #95859c 0%, #95859c 50%, #000 50%, #000 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
