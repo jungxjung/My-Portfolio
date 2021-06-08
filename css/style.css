@@ -187,7 +187,7 @@ nav .nav-link {
 	width: 100%;
 	display: block;
 	text-align: left;
-	transition: color 1s;
+	transition: color 0.5s;
 }
 .miscA:link{
 	color: #4f4f4f;
