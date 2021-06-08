@@ -183,6 +183,11 @@ nav .nav-link {
 	background-color: #BCE2E8;
 }
 
+.miscA{
+	display: block;
+	text-align: right;
+}
+
 /* ---- About ---- */
 
 .row {
