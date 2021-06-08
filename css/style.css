@@ -186,10 +186,19 @@ nav .nav-link {
 .miscA{
 	width: 100%;
 	display: block;
-	text-align: right;
+	text-align: left;
+	transition: color 1s;
 }
 .miscA:link{
 	color: #4f4f4f;
+}
+
+.miscA:hover{
+	color: #000;
+}
+
+.miscA i{
+	float: right;
 }
 
 /* ---- About ---- */
