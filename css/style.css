@@ -201,6 +201,19 @@ nav .nav-link {
 	float: right;
 }
 
+#miscspan{
+	display: block;
+	text-align: right;
+}
+
+#miscspan span{
+	font-family: 'Limelight', cursive;
+	font-size: 32px;
+	background: -webkit-linear-gradient(85deg, #95859c 0%, #95859c 50%, #000 50%, #000 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
 /* ---- About ---- */
 
 .row {
