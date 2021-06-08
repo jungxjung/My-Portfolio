@@ -105,7 +105,7 @@
       },
       {
         "title": "My Medical Journal",
-        "description": "My Medical Journal is an app that helps users keep track of their doctor appointments, prescriptions, and health history. We designed this app by analyzing data from interviews, generating user personas, and making prototypes. You can see more about our project on this website.<br>🔗<a href='https://ap3673.wixsite.com/mymedicaljournal'>My Medical Journal</a>"
+        "description": "My Medical Journal is an app that helps users keep track of their doctor appointments, prescriptions, and health history. We designed this app by analyzing data from interviews, generating user personas, and making prototypes. You can see more about our project on this website.<br><a target='_blank' href='https://ap3673.wixsite.com/mymedicaljournal'><i class='fas fa-external-link-alt'></i>My Medical Journal</a>"
       },
       {
         "title": "Wegmans - Usability Testing",

@@ -105,7 +105,7 @@
       },
       {
         "title":"My Medical Journal - 手機App設計",
-        "description": "My Medical Journal是一個幫助使用者記錄醫生預約、處方籤和個人健康記錄的手機App。我們透過訪問使用者、人物誌和prototype來設計這個App。完整的設計過程可以參考這個網站:<br>🔗<a href='https://ap3673.wixsite.com/mymedicaljournal'>My Medical Journal</a>"
+        "description": "My Medical Journal是一個幫助使用者記錄醫生預約、處方籤和個人健康記錄的手機App。我們透過訪問使用者、人物誌和prototype來設計這個App。完整的設計過程可以參考這個網站:<br><a target='_blank' href='https://ap3673.wixsite.com/mymedicaljournal'><i class='fas fa-external-link-alt'></i>My Medical Journal</a>"
       },
       {
         "title":"Wegmans - 可用性測試",
