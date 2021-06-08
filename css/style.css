@@ -184,8 +184,12 @@ nav .nav-link {
 }
 
 .miscA{
+	width: 100%;
 	display: block;
 	text-align: right;
+}
+.miscA:link{
+	color: #4f4f4f;
 }
 
 /* ---- About ---- */
