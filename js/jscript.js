@@ -160,9 +160,9 @@ function loadContent() {
         }
         $("#miscA")[0].innerHTML=data.project.misc.heading;
         var miscWorks = data.project.misc.miscWork;
-        $('.miscwork').remove('p');
-        $('.miscwork').remove('a');
-        $('.miscwork').remove('i');
+        $('.miscwork p').remove();
+        $('.miscwork i').remove();
+        $('.miscwork a').remove();
         for(let i=0; i < miscWorks.length; i++){
             $('.misc-title')[i].innerHTML = miscWorks[i].title;
             var e = document.createElement('div');
