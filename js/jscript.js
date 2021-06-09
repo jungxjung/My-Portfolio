@@ -162,6 +162,9 @@ function loadContent() {
         var miscWorks = data.project.misc.miscWork;
         for(let i=0; i < miscWorks.length; i++){
             $('.misc-title')[i].innerHTML = miscWorks[i].title;
+            $('.miscwork')[i].remove('p');
+            $('.miscwork')[i].remove('a');
+            $('.miscwork')[i].remove('i');
             var e = document.createElement('div');
             e.innerHTML = miscWorks[i].description;
             $('.miscWork')[i].appendChild(e.firstChild);
