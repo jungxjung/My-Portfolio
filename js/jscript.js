@@ -167,7 +167,7 @@ function loadContent() {
             $('.misc-title')[i].innerHTML = miscWorks[i].title;
             var e = document.createElement('div');
             e.innerHTML = miscWorks[i].description;
-            $('.miscWork')[i].append(miscWorks[i].description);
+            $('.miscWork').append(e);
             // for (let k =0; k < e.children.length; k++){
             //     console.log(e.children.length);
             //     console.log(e.children[0]);
