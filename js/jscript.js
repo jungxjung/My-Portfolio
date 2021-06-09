@@ -158,6 +158,7 @@ function loadContent() {
             $(".project-title")[i].innerHTML = projects[i].title;
             $(".project-description")[i].innerHTML = projects[i].description;
         }
+        $("#miscA")[0].innerHTML=data.project.misc.heading;
 
         //About
         $("#about-heading")[0].innerHTML = data.about.heading;
