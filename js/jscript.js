@@ -167,7 +167,10 @@ function loadContent() {
             $('.misc-title')[i].innerHTML = miscWorks[i].title;
             var e = document.createElement('div');
             e.innerHTML = miscWorks[i].description;
-            $('.miscWork')[i].appendChild(e.firstChild);
+            for (let k =0; k < e.children.length; k++){
+                $('.miscWork')[i].appendChild(e.children[k]);
+            }
+            
 
         }
 
