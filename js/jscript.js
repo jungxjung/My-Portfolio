@@ -167,11 +167,11 @@ function loadContent() {
         //contact
         $("#contact-heading")[0].innerHTML = data.contact.heading;
         $("#contact-msg")[0].innerHTML = data.contact.message;
-        var formLabels = data.contact.formLabel;
-        for (let i = 0; i < formLabels.length; i++) {
-            $(".contact-label")[i].innerHTML = formLabels[i];
-        }
-        $("#sendBtn")[0].value = data.contact.sendBtn;
+        // var formLabels = data.contact.formLabel;
+        // for (let i = 0; i < formLabels.length; i++) {
+        //     $(".contact-label")[i].innerHTML = formLabels[i];
+        // }
+        // $("#sendBtn")[0].value = data.contact.sendBtn;
     });
 }
 
