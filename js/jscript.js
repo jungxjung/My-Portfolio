@@ -161,7 +161,7 @@ function loadContent() {
         $("#miscA")[0].innerHTML=data.project.misc.heading;
         var miscWorks = data.project.misc.miscWork;
         for(let i=0; i < miscWorks.length; i++){
-            $('#misc.title')[i].innerHTML = miscWork[i].title;
+            $('#misc.title')[i].innerHTML = miscWorks[i].title;
         }
 
         //About
