@@ -169,6 +169,11 @@ function loadContent() {
             e.innerHTML = miscWorks[i].description;
             $('.miscWork')[i].append(e);
         }
+        if($('#misc').hasClass('show')){
+            $('.fa-caret-down').removeClass('fa-caret-down').addClass('fa-caret-up');
+        }else{
+            $('.fa-caret-up').removeClass('fa-caret-up').addClass('fa-caret-down');
+        }
 
 
         //About
@@ -199,21 +204,21 @@ function changeL() {
     loadContent();
 }
 
-//misc arrow animation
-// $('#miscA').click(function(){
-//     if($('#miscArrow').hasClass('fa-caret-down')){
-//         $('.fa-caret-down').removeClass('fa-caret-down').addClass('fa-caret-up');
-//     }else if($('#miscArrow').hasClass('fa-caret-up')){
-//         $('.fa-caret-up').removeClass('fa-caret-up').addClass('fa-caret-down');
-//     }    
-// })
+misc arrow animation
+$('#miscA').click(function(){
+    if($('#miscArrow').hasClass('fa-caret-down')){
+        $('.fa-caret-down').removeClass('fa-caret-down').addClass('fa-caret-up');
+    }else if($('#miscArrow').hasClass('fa-caret-up')){
+        $('.fa-caret-up').removeClass('fa-caret-up').addClass('fa-caret-down');
+    }    
+})
 
 
-if($('#misc').hasClass('show')){
-    $('.fa-caret-down').removeClass('fa-caret-down').addClass('fa-caret-up');
-}else{
-    $('.fa-caret-up').removeClass('fa-caret-up').addClass('fa-caret-down');
-}
+// if($('#misc').hasClass('show')){
+//     $('.fa-caret-down').removeClass('fa-caret-down').addClass('fa-caret-up');
+// }else{
+//     $('.fa-caret-up').removeClass('fa-caret-up').addClass('fa-caret-down');
+// }
 // myCollapsible.addEventListener('shown.bs.collapse', () => {
 //     if($('#miscArrow').hasClass('fa-caret-down')){
 //         $('.fa-caret-down').removeClass('fa-caret-down').addClass('fa-caret-up');
