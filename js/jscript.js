@@ -209,15 +209,21 @@ function changeL() {
 // })
 
 const myCollapsible = document.getElementById('misc')
-myCollapsible.addEventListener('shown.bs.collapse', () => {
-    if($('#miscArrow').hasClass('fa-caret-down')){
-        $('.fa-caret-down').removeClass('fa-caret-down').addClass('fa-caret-up');
-    }
-})
 
-myCollapsible.addEventListener('hidden.bs.collapse', () => {
-    if($('#miscArrow').hasClass('fa-caret-up')){
-        $('.fa-caret-up').removeClass('fa-caret-up').addClass('fa-caret-down');
-    }    
-})
+if(myCollapsible.hasClass('show')){
+    $('.fa-caret-up').removeClass('fa-caret-up').addClass('fa-caret-down');
+}else{
+    $('.fa-caret-down').removeClass('fa-caret-down').addClass('fa-caret-up');
+}
+// myCollapsible.addEventListener('shown.bs.collapse', () => {
+//     if($('#miscArrow').hasClass('fa-caret-down')){
+//         $('.fa-caret-down').removeClass('fa-caret-down').addClass('fa-caret-up');
+//     }
+// })
+
+// myCollapsible.addEventListener('hidden.bs.collapse', () => {
+//     if($('#miscArrow').hasClass('fa-caret-up')){
+//         $('.fa-caret-up').removeClass('fa-caret-up').addClass('fa-caret-down');
+//     }    
+// })
 
