@@ -172,7 +172,7 @@ function loadContent() {
                 console.log(e.children[0]);
                 console.log(e.children[1]);
                 console.log(e.children[2]);
-                $('.miscWork')[i].appendChild(e.children[k]);
+                $('.miscWork')[i].append(e.children[k]);
                 
             }
 
