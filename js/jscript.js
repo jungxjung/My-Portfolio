@@ -162,9 +162,9 @@ function loadContent() {
         var miscWorks = data.project.misc.miscWork;
         for(let i=0; i < miscWorks.length; i++){
             $('.misc-title')[i].innerHTML = miscWorks[i].title;
-            //var e = document.createElement('div');
-            //e.innerHTML = miscWorks[i].description;
-            (miscWorks[i].description).insertAfter($('.misc-title')[i]);
+            var e = document.createElement('div');
+            e.innerHTML = miscWorks[i].description;
+            $('.miscWork')[i].appendChild(e.firstChild);
 
         }
 
