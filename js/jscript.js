@@ -169,10 +169,11 @@ function loadContent() {
             e.innerHTML = miscWorks[i].description;
             for (let k =0; k < e.children.length; k++){
                 $('.miscWork')[i].appendChild(e.children[k]);
+                console.log(e.children[k]);
             }
-            
 
         }
+
 
         //About
         $("#about-heading")[0].innerHTML = data.about.heading;
