@@ -209,7 +209,7 @@ function changeL() {
 // })
 
 
-if($('#misc')[0].hasClass('show')){
+if($('#misc').hasClass('show')){
     $('.fa-caret-up').removeClass('fa-caret-up').addClass('fa-caret-down');
 }else{
     $('.fa-caret-down').removeClass('fa-caret-down').addClass('fa-caret-up');
