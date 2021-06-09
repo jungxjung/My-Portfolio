@@ -165,19 +165,9 @@ function loadContent() {
         $('.miscWork a').remove();
         for(let i=0; i < miscWorks.length; i++){
             $('.misc-title')[i].innerHTML = miscWorks[i].title;
-            
             var e = document.createElement('div');
             e.innerHTML = miscWorks[i].description;
             $('.miscWork')[i].append(e);
-            // for (let k =0; k < e.children.length; k++){
-            //     console.log(e.children.length);
-            //     console.log(e.children[0]);
-            //     console.log(e.children[1]);
-            //     console.log(e.children[2]);
-            //     $('.miscWork')[i].append(e.children[k]);
-                
-            // }
-
         }
 
 
