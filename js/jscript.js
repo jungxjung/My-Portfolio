@@ -200,10 +200,23 @@ function changeL() {
 }
 
 //misc arrow animation
-$('#miscA').click(function(){
+// $('#miscA').click(function(){
+//     if($('#miscArrow').hasClass('fa-caret-down')){
+//         $('.fa-caret-down').removeClass('fa-caret-down').addClass('fa-caret-up');
+//     }else if($('#miscArrow').hasClass('fa-caret-up')){
+//         $('.fa-caret-up').removeClass('fa-caret-up').addClass('fa-caret-down');
+//     }    
+// })
+
+const myCollapsible = document.getElementById('misc')
+myCollapsible.addEventListener('shown.bs.collapse', () => {
     if($('#miscArrow').hasClass('fa-caret-down')){
         $('.fa-caret-down').removeClass('fa-caret-down').addClass('fa-caret-up');
-    }else if($('#miscArrow').hasClass('fa-caret-up')){
+    }
+})
+
+myCollapsible.addEventListener('hidden.bs.collapse', () => {
+    if($('#miscArrow').hasClass('fa-caret-up')){
         $('.fa-caret-up').removeClass('fa-caret-up').addClass('fa-caret-down');
     }    
 })
