@@ -168,8 +168,9 @@ function loadContent() {
             var e = document.createElement('div');
             e.innerHTML = miscWorks[i].description;
             for (let k =0; k < e.children.length; k++){
+                console.log(e.children[0]);
                 $('.miscWork')[i].appendChild(e.children[k]);
-                console.log(e.children[k]);
+                
             }
 
         }
