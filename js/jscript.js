@@ -159,9 +159,9 @@ function loadContent() {
             $(".project-description")[i].innerHTML = projects[i].description;
         }
         $("#miscA")[0].innerHTML=data.project.misc.heading;
-        var miscWorks = data.project.misc.miscWorks;
+        var miscWorks = data.project.misc.miscWork;
         for(let i=0; i < miscWorks.length; i++){
-            $('#misc.title')[i].innerHTML = miscWorks[i].title;
+            $('#misc.title')[i].innerHTML = miscWork[i].title;
         }
 
         //About
