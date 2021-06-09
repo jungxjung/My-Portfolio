@@ -189,6 +189,11 @@ nav .nav-link {
 	text-align: left;
 	transition: color 0.5s;
 }
+
+.miscA:hover{
+	background-color: #a0d8ef;
+}
+
 .miscA:link{
 	color: #4f4f4f;
 }
@@ -198,9 +203,8 @@ nav .nav-link {
 }
 
 .miscA:hover{
-	color: #000;
+	color: #4f4f4f;
 }
-
 
 .miscA:active{
 	color: #4f4f4f;
