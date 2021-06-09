@@ -1,0 +1,641 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body h2 {
+    font-family: 'Roboto Slab', serif;
+}
+
+h1{
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bolder;
+}
+
+#logoText{
+    font-family: 'Sigmar One', cursive;
+    color: #302833;
+}
+
+#landingLogo2{
+    display: none;
+}
+
+#logoTextS{
+    color:#CE5242;
+}
+
+.mobile{
+    display:none;
+}
+
+
+/* Nav Bar */
+
+
+
+.topnav{
+    font-family: 'Roboto Mono', monospace;
+    background-color: #22333B;
+    overflow: hidden;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    vertical-align: text-bottom;
+}
+
+.topnav a{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#myLinks {
+  margin-top: 28px;
+  overflow: hidden;
+  float:left;
+}
+
+#myLinks a {
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  transition: color 1s;
+    transition: background-color 1s;
+}
+
+
+a.icon{
+    color: #EAE0D5;
+    display: none;
+}
+
+#myLinks a:hover {
+    background-color:#EAE0D5;
+    color:#22333B;
+}
+
+
+a.right {
+    float: right;
+}
+
+a.signupBut{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #C6AC8F;
+    color: black;
+    border-radius: 10px;
+    transition: color 1s;
+    transition: background-color 1s;
+}
+
+a.signupBut:hover{
+    background-color: black;
+    color: #c6ac8f;
+    border: 1px solid #c6ac8f;
+}
+
+/* Landing page */
+#ylback{
+    position: relative;
+    left:10%;
+    width: 90%;
+    height: 80vh;
+    background-color: #FFD369;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+#arrow{
+    position: absolute;
+    right:80px;
+    top:10px;
+    width: 10vw;
+}
+
+#landingLogo{
+    position: absolute;
+    left:20%;
+    top:25%;
+    width: 70%;
+}
+#landing h2{
+    font-size: 2.5vw;
+    position: absolute;
+    left: 24%;
+    top: 43%;
+}
+
+#background2{
+    position:absolute;
+    right: 0px;
+    bottom: 600px;
+    opacity: 5%;
+    /* bottom:0px;
+    width: 700px;
+    opacity:10%; */
+   
+}
+
+#background3{
+    position: absolute;
+    left:0;
+    top:-350px;
+    height:200px;
+    opacity: 5%;
+}
+
+.blinking {
+    animation: blinkingText 1s infinite;
+    /* font-family: futura;
+    font-style: italic;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    font-size: 45px;
+    background-color: #fc030b; */
+}
+
+/* about */
+
+#about{
+    position: relative;
+    top: 100px;
+}
+
+#myVideo {
+    right: 0;
+    bottom: 0;
+    border:none;
+    margin: 0;
+    width: 100%  !important; 
+
+  }
+  .content {
+      position: absolute;
+      top: 0;
+      right: 0;    
+      width: 50%;
+      height: 100%;
+      background: #5E503F;
+      color: #f8f5f1;
+      opacity: 85%;
+      border: none;
+      padding: 0;
+  }
+
+  .content h1 {
+      margin-top: 50px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      text-align: right;
+      background-color:#251F18;
+      padding-right: 50px;     
+  }
+
+
+  .content h2 {
+      margin: 50px;
+  }
+
+  .content li{
+      margin-left: 50px;
+      margin-right: 50px;
+      margin-top: 20px;
+  }
+
+  .bottom{
+      position: absolute;
+      bottom: 3em;
+      left: 0;
+  }
+
+  #myBtn {
+    position: absolute;
+    left:30px;
+    bottom:30px;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: #251F18;
+    opacity: 50%;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  .testing{
+      width: 100%;
+      height: auto;
+      position: relative;
+      border:none;
+      padding:0;
+      margin: 0;
+  }
+  
+  #myBtn:hover {
+    background: #ddd;
+    color:#251F18;
+  }
+
+  /* classes */
+
+  #classes{
+      position: relative;
+      top: 200px;
+  }
+  .h1header{
+      width: 95%;
+      height: 300px;
+      background-color: #FFF1CF;
+      border-radius: 50px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  .h1header h1{
+      position: relative;
+      text-align: center;
+      top: 70px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      color:  #0A0908;
+      border-bottom:2px solid #0A0908;
+      border-top:2px solid #0A0908;
+  }
+
+  .classInfo {
+    position: relative;
+    top: -80px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    color: #f8f5f1;
+  }
+
+  .classInfo li{
+      text-align: left;
+      margin-left: 10%;
+      margin-right: 10%;
+      padding-bottom: 10px;
+  }
+
+  .classInfo h3{
+      font-size: 50px;
+      font-family: 'Lobster', cursive;
+  }
+
+  .warning{
+      color: yellow;
+      font-weight: bold;
+  }
+
+  .classFlex{
+    flex-basis: 25%; 
+  }
+
+  .classFlex:nth-of-type(1), .classFlex:nth-of-type(3){
+    background-color: #22333B;
+  }
+
+  .classFlex:nth-of-type(2), .classFlex:nth-of-type(4){
+    background-color: #5E503F;
+  }
+
+
+  .classImg{
+      width:80%;
+      margin-top: 20px;
+      background-color: tomato;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  .note{
+      color: #0A0908;
+      font-weight: bolder;
+  }
+
+  /* Features */
+
+  #features{
+      position: relative;
+      top: 150px;
+      padding-left: 5%;
+      padding-right: 5%;
+  }
+  #features h1{
+      text-align: right;
+      background-image: linear-gradient(to right, #cfb8a0, #b5b293, #98ab8f, #7ca292, #659897, #6c9c9b, #74a0a0, #7ba4a4, #9db8ae, #c0cbbe, #dfdfd5, #f8f5f1);
+  }
+
+  #features h3{
+    font-family: 'Roboto Mono', monospace;
+  }
+
+  .divider{
+      height: 20px;
+      border: none;
+      background-image: url(../images/divider-2154993.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      opacity: 35%;
+      
+  }
+
+  .fLeft{
+      float:left;
+  }
+
+  .fRight{
+      float:right;
+  }
+
+  .flex2 {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .flex2 p{
+      line-height: 200%;
+  }
+  .flex2fig {
+        width: 40%;
+        text-align: center;
+        font-style: italic;
+        font-size: small;
+        font-weight: bold;
+        text-indent: 0;
+        margin: 0.5em;
+        padding: 0.5em;
+  }
+  figure img {
+    width: 100%;
+    box-shadow: 10px 10px 5px lightgrey;
+}
+
+  .flexp {
+        width: 50%;
+        text-align: left;
+        margin: 0.5em;
+        padding: 0.5em;
+  }
+
+  /* footer */
+  #contact{
+    position: relative;
+      top: 200px;
+      background-color: #22333b;
+      color: #EAE0D5;
+  }
+
+  .wrapFlex{
+      padding-left: 5%;
+      padding-right: 5%;
+      padding-top: 5%;
+      padding-bottom: 10%;
+      
+  }
+
+  #contact .flex2{
+      align-items: flex-start;
+      margin-bottom:50px;
+  }
+
+  #contact .flex2fig{
+      width: 60%;
+  }
+
+  #contact .flexp{
+      width: 30%;
+      margin-left: 1.8em;
+  }
+
+  #contact a{
+      color: #EAE0D5;
+      transition: color 1s;
+      transition: background-color 1s;
+  }
+
+  #contact a:hover{
+      background-color: #eae0d5;
+      color: #22333B;
+  }
+
+  iframe{
+    background-color: #EAE0D5;
+  }
+
+  #bottomLogo{
+      width: 100%;
+      position: absolute;
+      bottom: 5%;
+      background-color: #FFD369;
+      color:silver;
+      text-align: right;
+  }
+
+  #sources{
+      border: 1px dotted #eae0d5;
+  }
+
+  #bottomLogo img{
+      width:30%;
+      right:0;
+      vertical-align: middle;
+  }
+
+  /* Back to top button */
+  #myBtn2 {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 99;
+    font-size: 25px;
+    border: none;
+    outline: none;
+    background-color:#0A0908;
+    opacity: 50%;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+  }
+  
+  #myBtn2:hover {
+    opacity: 100%;
+  }
+
+/* Specifies the animation and transparency for the blinking text */
+@keyframes blinkingText {
+
+    0% {
+        opacity: 1;
+    }
+
+    49%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* for transition test */
+
+.classInfo .ani {
+  opacity: 50%;
+}
+
+
+
+
+
+/* media query */
+@media screen and (max-width: 900px) {
+    #contact .flex2 {
+        flex-direction: column-reverse;
+        
+        }
+    #contact .flexp{
+        width: 80%;
+        padding:0;
+    }
+
+    #contact .flex2fig {
+        width: 80%;
+        padding:0;
+        margin:0;
+    }
+
+    #about .desktop {
+        display: none;
+    }
+
+    #about .mobile {
+        display: block;
+        width:100%;
+        position: absolute;
+        top:0;
+        right:0;
+        text-align: right;
+        background-color:#251F18;
+        padding-right: 50px;
+        color: white;
+        opacity: 80%;   
+    }
+
+    #about .content {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: auto;
+        background-color: #5E503F;
+        color: #f8f5f1;
+        opacity: 85%;
+        border: none;
+        padding-top:20px;
+        padding-bottom: 20px;
+    }
+
+    #about .bottom{
+        position: relative;
+        height: 100%;
+        bottom: 0;
+        margin-left: 50px;
+    }
+
+    .content h2{
+        margin:0px;
+    }
+
+    #landingLogo{
+        display:none;
+    }
+
+    #landingLogo2{
+        position: absolute;
+        display: block;
+    left:42%;
+    top:25%;
+    width: 50%;
+    }
+
+    #landing h2{
+        top:58%;
+    }
+
+}
+
+
+@media screen and (max-width: 600px) {
+  .topnav #myLinks {
+      display: none;
+      float: none;
+      margin-top: 50px;
+    }
+    .topnav a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+        margin-left: 0;
+        margin-right: 0;
+      }
+
+      .topnav a.icon {
+        color:#EAE0D5;
+        font-size: 25px;
+        display: block;
+        float:left;
+      }
+
+
+  .flex2 {
+      width:90%;
+    flex-direction: column;
+    align-items: center;
+    }
+    .flexp{
+        width: 80%;
+        padding:0;
+    }
+
+    #contact .flexp{
+        width: 100%;
+        padding:0;
+    }
+    .flex2fig {
+        width: 80%;
+    }
+
+    .classInfo{
+        flex-direction: column;
+    }
+
+    iframe{
+        width:320px;
+    }
+}

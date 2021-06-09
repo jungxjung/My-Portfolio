@@ -158,6 +158,28 @@ function loadContent() {
             $(".project-title")[i].innerHTML = projects[i].title;
             $(".project-description")[i].innerHTML = projects[i].description;
         }
+        $("#miscA")[0].innerHTML=data.project.misc.heading;
+        var miscWorks = data.project.misc.miscWork;
+        $('.miscWork p').remove();
+        $('.miscWork i').remove();
+        $('.miscWork a').remove();
+        for(let i=0; i < miscWorks.length; i++){
+            $('.misc-title')[i].innerHTML = miscWorks[i].title;
+            
+            var e = document.createElement('div');
+            e.innerHTML = miscWorks[i].description;
+            $('.miscWork')[i].append(e);
+            // for (let k =0; k < e.children.length; k++){
+            //     console.log(e.children.length);
+            //     console.log(e.children[0]);
+            //     console.log(e.children[1]);
+            //     console.log(e.children[2]);
+            //     $('.miscWork')[i].append(e.children[k]);
+                
+            // }
+
+        }
+
 
         //About
         $("#about-heading")[0].innerHTML = data.about.heading;
@@ -166,11 +188,11 @@ function loadContent() {
         //contact
         $("#contact-heading")[0].innerHTML = data.contact.heading;
         $("#contact-msg")[0].innerHTML = data.contact.message;
-        var formLabels = data.contact.formLabel;
-        for (let i = 0; i < formLabels.length; i++) {
-            $(".contact-label")[i].innerHTML = formLabels[i];
-        }
-        $("#sendBtn")[0].value = data.contact.sendBtn;
+        // var formLabels = data.contact.formLabel;
+        // for (let i = 0; i < formLabels.length; i++) {
+        //     $(".contact-label")[i].innerHTML = formLabels[i];
+        // }
+        // $("#sendBtn")[0].value = data.contact.sendBtn;
     });
 }
 
@@ -186,3 +208,13 @@ function changeL() {
     }
     loadContent();
 }
+
+//misc arrow animation
+$('#miscA').click(function(){
+    if($('#miscArrow').hasClass('fa-caret-down')){
+        $('.fa-caret-down').removeClass('fa-caret-down').addClass('fa-caret-up');
+    }else if($('#miscArrow').hasClass('fa-caret-up')){
+        $('.fa-caret-up').removeClass('fa-caret-up').addClass('fa-caret-down');
+    }    
+})
+

@@ -105,13 +105,26 @@
       },
       {
         "title":"My Medical Journal - 手機App設計",
-        "description": "My Medical Journal是一個幫助使用者記錄醫生預約、處方籤和個人健康記錄的手機App。我們透過訪問使用者、人物誌和prototype來設計這個App。完整的設計過程可以參考這個網站:<br>🔗<a href='https://ap3673.wixsite.com/mymedicaljournal'>My Medical Journal</a>"
+        "description": "My Medical Journal是一個幫助使用者記錄醫生預約、處方籤和個人健康記錄的手機App。我們透過訪問使用者、人物誌和prototype來設計這個App。完整的設計過程可以參考這個網站:<br><i class='fas fa-external-link-alt'>  <a target='_blank' href='https://ap3673.wixsite.com/mymedicaljournal'></i>My Medical Journal</a>"
       },
       {
         "title":"Wegmans - 可用性測試",
         "description":"Wegmans是一個美國東岸的大型連鎖超市，他們在2019年末推出了新版的購物App。 我們與Wegmans的客服經理合作透過使用者訪談與可用性測試蒐集用戶對新版App的意見。我們完成了一份完整的評估報告，其中包含使用者的痛點整理及設計建議。"
       }
-    ]
+    ],
+    "misc":{
+      "heading":"其他作品<i class='fas fa-caret-down' id='miscArrow'></i>",
+      "miscWork":[
+        {
+          "title": "Find Your Material",
+          "description":"<p>Find Your Material是一個可以幫使用者根據所選擇的教材顯示相對應內容的小app。我用JavaScript根據使用的選擇動態改變表格元素。</p><i class='fas fa-external-link-alt'></i><a target='_blank' href='./misc/find-your-material/ChihJung_index.html'>Find Your Material</a>"
+        },
+        {
+          "title": "My Tutor Homepage",
+          "description": "<p>我做了一個網頁來幫自己尋找學生。 雖然現在並無招收學生的計畫，但是有一個以備不時之需總是好的。</p><i class='fas fa-external-link-alt'></i><a target='_blank' href='./misc/my-tutor-page/index.html'>CHENS Tutor</a>"
+        }
+      ]
+    }
   },
   "about": {
     "heading": "關於我",

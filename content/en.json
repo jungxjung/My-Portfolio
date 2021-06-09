@@ -105,13 +105,26 @@
       },
       {
         "title": "My Medical Journal",
-        "description": "My Medical Journal is an app that helps users keep track of their doctor appointments, prescriptions, and health history. We designed this app by analyzing data from interviews, generating user personas, and making prototypes. You can see more about our project on this website.<br>🔗<a href='https://ap3673.wixsite.com/mymedicaljournal'>My Medical Journal</a>"
+        "description": "My Medical Journal is an app that helps users keep track of their doctor appointments, prescriptions, and health history. We designed this app by analyzing data from interviews, generating user personas, and making prototypes. You can see more about our project on this website.<br><i class='fas fa-external-link-alt'></i>  <a target='_blank' href='https://ap3673.wixsite.com/mymedicaljournal'>My Medical Journal</a>"
       },
       {
         "title": "Wegmans - Usability Testing",
         "description": "Wegmans, a grocery chain store in the US, launched a new version of their shopping application in late 2019. We worked with Wegmans’s customer service manager to collect user experiences on the new app through usability testing and user interviews. We provided a full evaluation report and presentation to Wegmans, in which we pointed out pain points that users might have while using the app and design advice."
       }
-    ]
+    ],
+    "misc":{
+      "heading": "Miscellaneous Works<i class='fas fa-caret-down' id='miscArrow'></i>",
+      "miscWork": [
+        {
+          "title": "Find Your Material",
+          "description":"<p>Find Your Material is a simple app that helps users find their class material based on their choice of textbook chapters. I used JavaScript to dynamically create form elements depending on users' choices.</p><i class='fas fa-external-link-alt'></i><a target='_blank' href='./misc/find-your-material/ChihJung_index.html'>Find Your Material</a>"
+        },
+        {
+          "title": "My Tutor Homepage",
+          "description": "<p>I made myself a page looking for potential students. I am not looking for any students at this point, but it is nice to have one, just in case.</p><i class='fas fa-external-link-alt'></i><a target='_blank' href='./misc/my-tutor-page/index.html'>CHENS Tutor</a>"
+        }
+      ]
+    }
   },
   "about": {
     "heading": "About",
