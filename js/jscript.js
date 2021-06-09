@@ -204,7 +204,7 @@ function changeL() {
     loadContent();
 }
 
-misc arrow animation
+//misc arrow animation
 $('#miscA').click(function(){
     if($('#miscArrow').hasClass('fa-caret-down')){
         $('.fa-caret-down').removeClass('fa-caret-down').addClass('fa-caret-up');
