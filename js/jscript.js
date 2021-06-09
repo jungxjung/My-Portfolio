@@ -208,9 +208,8 @@ function changeL() {
 //     }    
 // })
 
-const myCollapsible = document.getElementById('misc')
 
-if(myCollapsible.hasClass('show')){
+if($('#misc')[0].hasClass('show')){
     $('.fa-caret-up').removeClass('fa-caret-up').addClass('fa-caret-down');
 }else{
     $('.fa-caret-down').removeClass('fa-caret-down').addClass('fa-caret-up');
