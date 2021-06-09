@@ -117,11 +117,11 @@
       "miscWork": [
         {
           "title": "Find Your Material",
-          "description":"<p>Find Your Material is a simple app that helps users find their class material based on their choice of textbook chapters. I used JavaScript to dynamically create form elements depending on users' choices.</p><i class='fas fa-external-link-alt'></i><a target='_blank' href='./misc/find-your-material/ChihJung_index.html'>Find Your Material</a>"
+          "description":"<p>Find Your Material is a simple app that helps users find their class material based on their choice of textbook chapters. I used JavaScript to dynamically create form elements depending on users' choices.</p><a target='_blank' href='./misc/find-your-material/ChihJung_index.html'>Find Your Material</a>  <i class='fas fa-external-link-alt'></i>"
         },
         {
           "title": "My Tutor Homepage",
-          "description": "<p>I made myself a page looking for potential students. I am not looking for any students at this point, but it is nice to have one, just in case.</p><i class='fas fa-external-link-alt'></i><a target='_blank' href='./misc/my-tutor-page/index.html'>CHENS Tutor</a>"
+          "description": "<p>I made myself a page looking for potential students. I am not looking for any students at this point, but it is nice to have one, just in case.</p><a target='_blank' href='./misc/my-tutor-page/index.html'>CHENS Tutor</a>  <i class='fas fa-external-link-alt'></i>"
         }
       ]
     }
