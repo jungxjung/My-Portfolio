@@ -123,16 +123,20 @@ nav .nav-link {
 	flex-wrap: wrap;
 }
 
-.upstat {
+.neh {
 	background-color: #eebbcb;
 }
 
-.mmj {
+.upstat {
 	background-color: #edd3a1;
 }
 
-.wegmans {
+.mmj {
 	background-color: #d8e698;
+}
+
+.wegmans {
+	background-color: #b8d3b5;
 }
 
 .projects-flex-left {
