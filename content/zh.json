@@ -12,20 +12,22 @@
     "heading": "學歷",
     "school": [
       {
-        "name": "NCCU",
-        "description": "2016 <br><b>經濟系學士</b><br>台灣 台北，政治大學"
+        "name":"RIT",
+        "description": "2021 <br><b>人機互動碩士</b><br><b>進階網頁開發證書</b><br>美國 紐約，羅徹斯特理工學院"
+
+      },
+      {
+        "name":"WashU",
+        "description": "2017 <br><b>WUSTL-ALLEX對外漢語老師訓練</b><br>美國 密蘇里州，聖路易華盛頓大學"
+
       },
       {
         "name":"RU",
         "description": "2015 交換學生<br><b>企管系</b><br>冰島 雷克雅維克，雷克雅維克大學"
       },
       {
-        "name":"WashU",
-        "description": "2017 <br><b>WUSTL-ALLEX對外漢語老師訓練</b><br>美國 密蘇里州，聖路易華盛頓大學"
-      },
-      {
-        "name":"RIT",
-        "description": "2021 <br><b>人機互動碩士</b><br><b>進階網頁開發證書</b><br>美國 紐約，羅徹斯特理工學院"
+        "name": "NCCU",
+        "description": "2016 <br><b>經濟系學士</b><br>台灣 台北，政治大學"
       }
     ]
   },
@@ -101,7 +103,7 @@
     "projects":[
       {
         "title": "An Engaging Digital Curriculum for Intermediate Chinese Language and Culture",
-        "description": "This projects received a grant of $48,355 from the <b>National Endowment for the Humanities through the Digital Humanities Advancement Grant program</b>. The grant will support planning efforts to develop a curriculum for intermediate Chinese that incorporates digital learning tools.<br>Associate Professor Xiaoling Shi will serve as the Project Director by working with Kaidi Chen, Chih-Jung Chen, Runqi Deng and Brian Kern. The grant period is Sep 2021 to Aug , 2022."
+        "description": "這個計畫致力於將數位學習工具融入到中級中文語言與文化課程中，並在2021年九月到2022年八月受到National Endowment for the Humanities (NEH) - Digital Humanities Advancement Grant的支持"
       },
       {
         "title":"UPSTAT - 網站設計",
