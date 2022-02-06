@@ -37,8 +37,17 @@
       "heading": "Work",
       "jobs": [
         {
+          "title": "Consultant",
+          "place": "Allegheny College, Pennsylvania | Sep 2021 - Present",
+          "duty": [
+            "Refining class materials to improve accessibility",
+            "Incorporating external apps in the learning management system",
+            "Developing a website for a grant-funded project"
+          ]
+        },
+        {
           "title": "Global Student Coordinator",
-          "place": "RIT, New York, US | Oct 2019 - Present",
+          "place": "RIT, New York, US | Oct 2019 - Aug 2021",
           "duty": [
             "Organizing application paperwork and manage communication with participating students",
             "Coordinating program events such as airport arrivals/departures, speaker events, and field trip activities",
