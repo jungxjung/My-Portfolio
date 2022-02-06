@@ -12,20 +12,22 @@
     "heading": "學歷",
     "school": [
       {
-        "name": "NCCU",
-        "description": "2016 <br><b>經濟系學士</b><br>台灣 台北，政治大學"
+        "name":"RIT",
+        "description": "2021 <br><b>人機互動碩士</b><br><b>進階網頁開發證書</b><br>美國 紐約，羅徹斯特理工學院"
+
+      },
+      {
+        "name":"WashU",
+        "description": "2017 <br><b>WUSTL-ALLEX對外漢語老師訓練</b><br>美國 密蘇里州，聖路易華盛頓大學"
+
       },
       {
         "name":"RU",
         "description": "2015 交換學生<br><b>企管系</b><br>冰島 雷克雅維克，雷克雅維克大學"
       },
       {
-        "name":"WashU",
-        "description": "2017 <br><b>WUSTL-ALLEX對外漢語老師訓練</b><br>美國 密蘇里州，聖路易華盛頓大學"
-      },
-      {
-        "name":"RIT",
-        "description": "2021 <br><b>人機互動碩士</b><br><b>進階網頁開發證書</b><br>美國 紐約，羅徹斯特理工學院"
+        "name": "NCCU",
+        "description": "2016 <br><b>經濟系學士</b><br>台灣 台北，政治大學"
       }
     ]
   },
@@ -35,8 +37,17 @@
       "heading": "工作",
       "jobs": [
         {
+          "title": "顧問",
+          "place": "美國賓州 Allegheny大學 | 2021年9月 - 在職中",
+          "duty": [
+            "調整課程教材以提升易用性及易讀性",
+            "將外部Apps整合到學校教學管理系統之中",
+            "設計開發獎金支持計畫的網站"
+          ]
+        },
+        {
           "title": "國際學生聯絡專員",
-          "place": "美國 紐約 RIT | 2019年10月 - 在職中",
+          "place": "美國 紐約 RIT | 2019年10月 - 2021年8月",
           "duty": [
             "處理項目申請文件和與申請學生的溝通協調",
             "安排各專案的活動，例如，安排機場接駁、邀請客座演講者、安排校外參訪行程",
@@ -101,7 +112,7 @@
     "projects":[
       {
         "title": "An Engaging Digital Curriculum for Intermediate Chinese Language and Culture",
-        "description": "Consultant, <b>National Endowment for the Humanities Digital Humanities Advancement Grant</b>, “An Engaging Digital Curriculum for Intermediate Chinese Language and Culture,” September 2021 - August 2022."
+        "description": "這個計畫致力於將數位學習工具融入到中級中文語言與文化課程中，並在2021年九月到2022年八月受到National Endowment for the Humanities (NEH) - Digital Humanities Advancement Grant的支持"
       },
       {
         "title":"UPSTAT - 網站設計",
