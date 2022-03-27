@@ -115,12 +115,12 @@
         "description": "這個計畫致力於將數位學習工具融入到中級中文語言與文化課程中，並在2021年九月到2022年八月受到National Endowment for the Humanities (NEH) - Digital Humanities Advancement Grant的支持"
       },
       {
-        "title":"UPSTAT - 網站設計",
-        "description": "我與我們的團隊（SpideRIT）為美國統計學協會（American Statistical Association）北紐約州分會的年度會議設計及開發網站。UPSTAT (Upstate New York Statistics Conference)<br>我主要是負責設計資料庫架構。"
+        "title":"RIT Human Subject Research Office website - 網站設計",
+        "description": "I used user-centered design activities to redesign RIT Human Subjects Research Office website. I conducted card sorting to develop a new navigation structure and built prototypes for three rounds of online usability testings.<br><a target='_blank' href='https://www.figma.com/proto/XF3d5HWfMIELRYWmxB0oUe/Wireframing-in-Figma?node-id=1356%3A6159&starting-point-node-id=1356%3A5810&scaling=scale-down'>Prototype - Mobile</a><i class='fas fa-external-link-alt'></i><br><a target='_blank' href='https://www.figma.com/proto/XF3d5HWfMIELRYWmxB0oUe/Wireframing-in-Figma?node-id=1345%3A3527&starting-point-node-id=1345%3A3527'>Prototype - Desktop</a>  <i class='fas fa-external-link-alt'></i>"
       },
       {
         "title":"My Medical Journal - 手機App設計",
-        "description": "My Medical Journal是一個幫助使用者記錄醫生預約、處方籤和個人健康記錄的手機App。我們透過訪問使用者、人物誌和prototype來設計這個App。完整的設計過程可以參考這個網站:<br><i class='fas fa-external-link-alt'><a target='_blank' href='https://ap3673.wixsite.com/mymedicaljournal'>  </i>My Medical Journal</a>"
+        "description": "My Medical Journal是一個幫助使用者記錄醫生預約、處方籤和個人健康記錄的手機App。我們透過訪問使用者、人物誌和prototype來設計這個App。完整的設計過程可以參考這個網站:<br><a target='_blank' href='https://ap3673.wixsite.com/mymedicaljournal'>My Medical Journal </a><i class='fas fa-external-link-alt'></i>"
       },
       {
         "title":"Wegmans - 可用性測試",
