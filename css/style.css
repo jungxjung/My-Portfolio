@@ -108,7 +108,7 @@ nav .nav-link {
 	position: absolute;
 	bottom: 0;
 	right: 0;
-	font-family: 'Limelight', cursive;
+	font-family: Georgia, 'Times New Roman', Times, serif
 	letter-spacing: 10px;
 	font-size: 72px;
 	background: -webkit-linear-gradient(60deg, #d8e698 0%, #edd3a1 50%, #eebbcb 100%);
@@ -177,7 +177,7 @@ nav .nav-link {
 }
 
 .projects-flex-right span {
-	font-family: 'Limelight', cursive;
+	font-family: Georgia, 'Times New Roman', Times, serif
 	font-size: 32px;
 	margin-top: 50px;
 	align-self: flex-end;
