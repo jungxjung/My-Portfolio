@@ -177,13 +177,13 @@ nav .nav-link {
 }
 
 .projects-flex-right span {
-	font-family: Georgia, 'Times New Roman', Times, serif
+	font-family: Georgia, 'Times New Roman', Times, serif;
 	font-size: 32px;
 	margin-top: 50px;
 	align-self: flex-end;
-	background: -webkit-linear-gradient(80deg, #95859c 0%, #95859c 50%, #000 50%, #000 100%);
+	/* background: -webkit-linear-gradient(80deg, #95859c 0%, #95859c 50%, #000 50%, #000 100%);
 	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+	-webkit-text-fill-color: transparent; */
 }
 
 .miscC{
