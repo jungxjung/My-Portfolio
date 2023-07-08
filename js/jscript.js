@@ -83,7 +83,7 @@ function scrollFunction() {
 //json files
 var zhJson = "content/zh.json";
 var enJson = "content/en.json";
-var lang = enJson;
+var lang = zhJson;
 
 $(document).ready(function () {
     loadContent();
