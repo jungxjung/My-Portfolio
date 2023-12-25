@@ -29,7 +29,7 @@ function videoSwitch(modalID){
 function getSlideLink(modalID){
     var link;
     if (modalID == "#BOM_MGMT_Modal") {
-        link = '<iframe src="https://cimforce-my.sharepoint.com/personal/sharon_chen_cimforce_com/_layouts/15/Doc.aspx?sourcedoc={1da0917f-1652-432b-99b2-eb04ecd24114}&amp;action=embedview&amp;wdAr=1.7777777777777777" frameborder="0">這是 <a target="_blank" href="https://office.com/webapps">Office</a> 提供的內嵌 <a target="_blank" href="https://office.com">Microsoft Office</a> 簡報。</iframe>';
+        link = '<iframe src="https://cimforce-my.sharepoint.com/personal/sharon_chen_cimforce_com/_layouts/15/Doc.aspx?sourcedoc={8594c79f-194f-4ae4-8b31-d085b04257a1}&amp;action=embedview&amp;wdAr=1.7777777777777777" width="476px" height="288px" frameborder="0">這是 <a target="_blank" href="https://office.com/webapps">Office</a> 提供的內嵌 <a target="_blank" href="https://office.com">Microsoft Office</a> 簡報。</iframe>';
     }
     return link;
 }
