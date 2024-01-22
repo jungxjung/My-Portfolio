@@ -43,7 +43,6 @@ function slidesSwitch(modalID){
     var div = document.createElement('div');
     div.classList.add('ratio', 'ratio-16x9');
 
-
     div.innerHTML = getSlideLink(modalID);
 
     document.querySelector(modalID + ' .modal-body').append(div);
