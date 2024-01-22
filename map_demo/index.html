@@ -56,20 +56,20 @@
           <div class="modal-body">
 
             <template v-if="isVideo==false">
-              <div id="slideCarousel" class="carousel carousel-dark slide">
+              <div :id="'slideCarousel'+mindex" class="carousel carousel-dark slide">
                 <div class="carousel-indicators">
-                  <button v-for="(item, index) in modal.images" type="button" data-bs-target="#slideCarousel" v-bind:data-bs-slide-to="index" v-bind:class="{ 'active': index === 0 }" aria-current="true"></button>
+                  <button v-for="(item, index) in modal.images" type="button" :data-bs-target="'#slideCarousel'+mindex" v-bind:data-bs-slide-to="index" v-bind:class="{ 'active': index === 0 }" aria-current="true"></button>
                 </div>
                 <div class="carousel-inner">
                   <div v-for="(item, index) in modal.images" class="carousel-item" v-bind:class="{ 'active': index === 0 }">
                     <img v-bind:src="item" class="d-block w-100" alt="...">
                   </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#slideCarousel" data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" :data-bs-target="'#slideCarousel'+mindex" data-bs-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#slideCarousel" data-bs-slide="next">
+                <button class="carousel-control-next" type="button" :data-bs-target="'#slideCarousel'+mindex" data-bs-slide="next">
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Next</span>
                 </button>
