@@ -6,72 +6,105 @@
   <meta name="description" content="">
   <meta name="author" content="Chih-Jung Chen" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="robots" content="noindex">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" media="screen" href="css/style.css">
   <script
   src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
   integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
   crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
   <script src="js/script.js"></script>
 </head>
-<body>
+<body class="bg-dark bg-gradient">
+  <nav class="navbar position-fixed">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="images/LOGO-for-Web.svg" alt="Logo" width="60" class="d-inline-block">
+      </a>
+    </div>
+  </nav>
 
-<nav class="navbar position-fixed">
-  <div class="container">
-    <a class="navbar-brand" href="#">
-      <img src="images/LOGO-for-Web.svg" alt="Logo" width="60" class="d-inline-block">
-    </a>
+  <div class="container-md">
+    <img id="main_map" width="4244" height="2366" class="" src="images/map/map_zh.png" alt="" usemap="#mapping">
+    <map name="mapping">
+      <area target="" alt="client" title="client" href="" coords="2080,2309,2293,2170,2080,2001,1832,2166" shape="poly">
+      <area target="" alt="project_mgmt" title="project_mgmt" href="" coords="1592,2069,1851,1922,1858,1615,1596,1491,1465,1536,1457,1686,1390,1724,1337,1911" shape="poly">
+      <area target="" alt="mold_design" title="mold_design" href="" coords="1135,1784,1416,1622,1397,1326,1210,1217,1172,1364,850,1619" shape="poly">
+      <area type="button" data-bs-toggle="modal" data-bs-target="#BOM_MGMT_Modal" alt="BOM_MGMT" target="" alt="bom_mgmt" title="bom_mgmt" href="" coords="1026,1264,1270,1117,1116,889,1022,667,824,776,786,1114" shape="poly">
+      <area type="button" data-bs-toggle="modal" data-bs-target="#CAPP_Modal" target="" alt="capp" title="capp" href="" coords="1555,1109,1817,955,1585,756,1502,561,1300,674,1307,951" shape="poly">
+      <area target="" alt="aps" title="aps" href="" coords="2020,725,2297,549,2072,399,2042,234,1828,339,1825,466,1750,556" shape="poly">
+      <area type="button" data-bs-toggle="dropdown" aria-expanded="false" target="" alt="cam" title="cam" href="" coords="2553,640,2814,804,3066,650,3043,365,2841,256,2799,440" shape="poly">
+      <area target="" alt="electrode_design" title="electrode_design" href="" coords="2904,869,3171,677,3189,479,3380,595,3433,884,3163,1019" shape="poly">
+      <area target="" alt="task_manager" title="task_manager" href="" coords="3384,1129,3545,964,3564,847,3699,769,3710,941,3894,1136,3654,1301" shape="poly">
+      <area target="" alt="mold_assembly" title="mold_assembly" href="" coords="2702,1577,2859,1469,2871,1330,3002,1274,3069,1367,3384,1589,3066,1784" shape="poly">
+      <area target="" alt="situation_room" title="situation_room" href="" coords="2304,1887,2616,2071,2908,1876,2631,1681,2612,1520,2346,1689" shape="poly">
+      <area target="" alt="operation" title="operation" href="" coords="2361,674,2451,786,3028,1124,2083,1694,1525,1349,1975,1045,1937,887" shape="poly">
+      <area target="" alt="purchase" title="purchase" href="" coords="572,851,332,694,370,581,460,551,580,551,805,705" shape="poly">
+      <area target="" alt="storage" title="storage" href="" coords="835,391,891,290,1142,155,1506,414,1180,605" shape="poly">
+    </map>
   </div>
-</nav>
 
-<div class="container-md">
-  <img id="main_map" width="2037" height="1136" class="" src="images/map/地圖_中文(去背).png" alt="" usemap="#mapping">
-  <map name="mapping">
-    <area type="button" data-bs-toggle="modal" data-bs-target="#BOM_MGMT_Modal" alt="BOM_MGMT" title="BOM_MGMT" coords="293,529,510,392,645,527,491,639" shape="poly">
-    <area target="" alt="CAPP" title="CAPP" href="" coords="737,552,591,424,584,319,721,265,897,458" shape="poly">
-    <area type="button" data-bs-toggle="dropdown" aria-expanded="false" alt="CAM" title="CAM" href="" coords="1180,300,1315,183,1333,91,1513,197,1484,309,1329,399" shape="poly">
-    <area target="" alt="Electrode_design" title="Electrode_design" href="" coords="1372,425,1516,301,1529,195,1721,278,1678,415,1522,521" shape="poly">
-  </map>
-</div>
+  <div v-for="(modal, mindex) in modals">
+    <div class="modal fade" v-bind:id="modal.id" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">{{modal.title}}</h1>
+            <button @click="isVideo=true" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
 
-<div class="modal fade" id="BOM_MGMT_Modal" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="staticBackdropLabel">BOM管理</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <div class="ratio ratio-16x9">
-          <video class="" controls>
-            <source class="" src="video/BOM_MGMT.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-          <!-- <iframe src="https://cimforce-my.sharepoint.com/personal/sharon_chen_cimforce_com/_layouts/15/Doc.aspx?sourcedoc={1da0917f-1652-432b-99b2-eb04ecd24114}&amp;action=embedview&amp;wdAr=1.7777777777777777" frameborder="0"></iframe> -->
+            <template v-if="isVideo==false">
+              <div id="slideCarousel" class="carousel carousel-dark slide">
+                <div class="carousel-indicators">
+                  <button v-for="(item, index) in modal.images" type="button" data-bs-target="#slideCarousel" v-bind:data-bs-slide-to="index" v-bind:class="{ 'active': index === 0 }" aria-current="true"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div v-for="(item, index) in modal.images" class="carousel-item" v-bind:class="{ 'active': index === 0 }">
+                    <img v-bind:src="item" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#slideCarousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#slideCarousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </template>
+
+            <template v-if="isVideo">
+              <div class="ratio ratio-16x9">
+                <video class="" controls>
+                  <source class="" v-bind:src="modal.videoSrc" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </template>
+
+          </div>
+          <div class="modal-footer" >
+            <div class="btn-group" role="group" aria-label="basic radio toggle button group">
+              <input @click="isVideo=true" type="radio" class="btn-check" v-bind:name="'btnradio'+mindex" v-bind:id="'btnradioVideo'+mindex" autocomplete="off" checked>
+              <label class="btn btn-outline-primary" v-bind:for="'btnradioVideo'+mindex">Video</label>
+            
+              <input @click="isVideo=false" type="radio" class="btn-check" v-bind:name="'btnradio'+mindex" v-bind:id="'btnradioSlide'+mindex" autocomplete="off">
+              <label class="btn btn-outline-primary" v-bind:for="'btnradioSlide'+mindex">Slides</label>
+            </div>
+            <button @click="isVideo=true" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
         </div>
-      </div>
-      <div class="modal-footer">
-        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-          <input type="radio" class="btn-check" name="btnradio" id="btnradioVideo" autocomplete="off" onclick="videoSwitch('#BOM_MGMT_Modal')" checked>
-          <label class="btn btn-outline-primary" for="btnradioVideo">Video</label>
-        
-          <input type="radio" class="btn-check" name="btnradio" id="btnradioSlides" autocomplete="off" onclick="slidesSwitch('#BOM_MGMT_Modal')">
-          <label class="btn btn-outline-primary" for="btnradioSlides">Slides</label>
-        </div>
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
-</div>
 
-<!-- particles.js container -->
-<!-- <div id="particles-js"></div> -->
-
-<!-- scripts -->
-<!-- <script src="js/particles.js"></script>
-<script src="js/app.js"></script> -->
-<script src="js/jquery.rwdImageMaps.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+  <!-- scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/jquery.rwdImageMaps.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 </body>
 </html>
