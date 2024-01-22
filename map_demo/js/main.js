@@ -28,13 +28,13 @@ const app = Vue.createApp({
                     videoSrc:'video/CAPP_0112_2024.mp4',
                     images:[
                         'images/capp_slide/capp_slide_1.PNG',
+                        'images/capp_slide/capp_slide_2.PNG',
                         'images/capp_slide/capp_slide_3.PNG',
                         'images/capp_slide/capp_slide_4.PNG',
                         'images/capp_slide/capp_slide_5.PNG',
                         'images/capp_slide/capp_slide_6.PNG',
                         'images/capp_slide/capp_slide_7.PNG',
                         'images/capp_slide/capp_slide_8.PNG',
-                        'images/capp_slide/capp_slide_9.PNG',
                     ]
 
                 }
