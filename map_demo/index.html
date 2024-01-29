@@ -47,7 +47,7 @@
 
   <div v-for="(modal, mindex) in modals">
     <div class="modal fade" v-bind:id="modal.id" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-      <div class="modal-dialog modal-xl">
+      <div class="modal-dialog modal-xl modal-fullscreen-lg-down">
         <div class="modal-content">
           <div class="modal-header">
             <h1 class="modal-title fs-5" id="staticBackdropLabel">{{modal.title}}</h1>
@@ -62,7 +62,7 @@
                 </div>
                 <div class="carousel-inner">
                   <div v-for="(item, index) in modal.images" class="carousel-item" v-bind:class="{ 'active': index === 0 }">
-                    <img v-bind:src="item" class="d-block w-100" alt="...">
+                    <img v-bind:src="item" class="w-100 d-inline-block" alt="...">
                   </div>
                 </div>
                 <button class="carousel-control-prev" type="button" :data-bs-target="'#slideCarousel'+mindex" data-bs-slide="prev">

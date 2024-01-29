@@ -37,6 +37,11 @@ const app = Vue.createApp({
                         'images/capp_slide/capp_slide_8.PNG',
                     ]
 
+                },
+                {
+                    id:'electrode_design_modal',
+                    title:'電極設計',
+                    videoSrc:'video/electrode_design_0129'
                 }
             ]
         }
