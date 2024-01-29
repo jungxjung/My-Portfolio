@@ -41,7 +41,21 @@ const app = Vue.createApp({
                 {
                     id:'electrode_design_modal',
                     title:'電極設計',
-                    videoSrc:'video/electrode_design_0129'
+                    videoSrc:'video/electrode_design_0129.mp4',
+                    images:[
+                        'images/electrode_design/electrode_design_1.PNG',
+                        'images/electrode_design/electrode_design_2.PNG',
+                        'images/electrode_design/electrode_design_3.PNG',
+                        'images/electrode_design/electrode_design_4.PNG',
+                        'images/electrode_design/electrode_design_5.PNG',
+                        'images/electrode_design/electrode_design_6.PNG',
+                        'images/electrode_design/electrode_design_7.PNG',
+                        'images/electrode_design/electrode_design_8.PNG',
+                        'images/electrode_design/electrode_design_9.PNG',
+                        'images/electrode_design/electrode_design_10.PNG',
+                        'images/electrode_design/electrode_design_11.PNG',
+                        'images/electrode_design/electrode_design_12.PNG'
+                    ]
                 }
             ]
         }
