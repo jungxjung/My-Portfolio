@@ -177,7 +177,6 @@ canvas {
 }
 
 #main_map {
-
   height: auto;
   max-width: 100%;
   width: auto;
@@ -186,21 +185,9 @@ canvas {
   margin-right: auto;
 }
 
-.map_item {
+.card {
+  
 }
 
-/* ---- particles.js container ---- */
-
-#particles-js {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background-image: url("");
-  background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  display: block;
-  z-index: 0;
-  top: 0;
-  left: 0;
+.map_item {
 }

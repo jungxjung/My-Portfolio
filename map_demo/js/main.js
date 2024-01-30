@@ -56,6 +56,34 @@ const app = Vue.createApp({
                         'images/electrode_design/electrode_design_11.PNG',
                         'images/electrode_design/electrode_design_12.PNG'
                     ]
+                },
+                {
+                    id:'cnc_cam',
+                    title:'CNC CAM',
+                },
+                {
+                    id:'wedm_cam',
+                    title:'WEDM CAM',
+                },
+                {
+                    id:'cmm_cam',
+                    title:'CMM CAM',
+                },
+                {
+                    id:'cnc_machining',
+                    title:'CNC Machining'
+                },
+                {
+                    id:'edm_machining',
+                    title:'EDM Machining'
+                },
+                {
+                    id:'wedm_machining',
+                    title:'WEDM Machining'
+                },
+                {
+                    id:'cmm_measuring',
+                    title:'CMM Measuring'
                 }
             ]
         }
