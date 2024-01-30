@@ -34,15 +34,115 @@
       <area type="button" data-bs-toggle="modal" data-bs-target="#BOM_MGMT_Modal" alt="BOM_MGMT" target="" alt="bom_mgmt" title="bom_mgmt" href="" coords="1026,1264,1270,1117,1116,889,1022,667,824,776,786,1114" shape="poly">
       <area type="button" data-bs-toggle="modal" data-bs-target="#CAPP_Modal" target="" alt="capp" title="capp" href="" coords="1555,1109,1817,955,1585,756,1502,561,1300,674,1307,951" shape="poly">
       <area alt="aps" title="aps" href="" coords="2020,725,2297,549,2072,399,2042,234,1828,339,1825,466,1750,556" shape="poly">
-      <area type="button" data-bs-toggle="dropdown" aria-expanded="false" target="" alt="cam" title="cam" href="" coords="2553,640,2814,804,3066,650,3043,365,2841,256,2799,440" shape="poly">
+      <area type="button" data-bs-toggle="modal" data-bs-target="#CAM_Modal" aria-expanded="false" alt="cam" title="cam" coords="2553,640,2814,804,3066,650,3043,365,2841,256,2799,440" shape="poly">
       <area type="button" data-bs-toggle="modal" data-bs-target="#electrode_design_modal" alt="electrode_design" title="electrode_design" href="" coords="2904,869,3171,677,3189,479,3380,595,3433,884,3163,1019" shape="poly">
       <area target="" alt="task_manager" title="task_manager" href="" coords="3384,1129,3545,964,3564,847,3699,769,3710,941,3894,1136,3654,1301" shape="poly">
       <area target="" alt="mold_assembly" title="mold_assembly" href="" coords="2702,1577,2859,1469,2871,1330,3002,1274,3069,1367,3384,1589,3066,1784" shape="poly">
       <area target="" alt="situation_room" title="situation_room" href="" coords="2304,1887,2616,2071,2908,1876,2631,1681,2612,1520,2346,1689" shape="poly">
-      <area target="" alt="operation" title="operation" href="" coords="2361,674,2451,786,3028,1124,2083,1694,1525,1349,1975,1045,1937,887" shape="poly">
+      <area type="button" data-bs-toggle="modal" data-bs-target="#operation" alt="operation" title="operation" coords="2361,674,2451,786,3028,1124,2083,1694,1525,1349,1975,1045,1937,887" shape="poly">
       <area target="" alt="purchase" title="purchase" href="" coords="572,851,332,694,370,581,460,551,580,551,805,705" shape="poly">
       <area target="" alt="storage" title="storage" href="" coords="835,391,891,290,1142,155,1506,414,1180,605" shape="poly">
     </map>
+  </div>
+
+  <div class="modal fade" id="CAM_Modal" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4">
+            <div class="col">
+              <div class="card h-100">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="./images/CAM/CNC_CAM_icon.png" class="card-img-top w-75 mx-auto mt-3" alt="cnc cam icon">
+                <div class="card-body">
+                  <h5 class="card-title text-center fs-5">CNC CAM</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="./images/CAM/WE_CAM_icon.png" class="card-img-top w-75 mx-auto mt-3" alt="WEDM CAM icon">
+                <div class="card-body">
+                  <h5 class="card-title text-center fs-5">WEDM CAM</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="./images/CAM/CMM_CAM_icon.png" class="card-img-top w-75 mx-auto mt-3" alt="CMM CAM">
+                <div class="card-body">
+                  <h5 class="card-title text-center fs-5">CMM CAM</h5>
+                  <p class="card-text">Auto-generate measurement points</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Understood</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="operation" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4">
+            <div class="col">
+              <div class="card h-100">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="./images/CAM/CNC_CAM_icon.png" class="card-img-top w-75 mx-auto mt-3" alt="cnc cam icon">
+                <div class="card-body">
+                  <h5 class="card-title text-center fs-5">CNC CAM</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="./images/CAM/WE_CAM_icon.png" class="card-img-top w-75 mx-auto mt-3" alt="WEDM CAM icon">
+                <div class="card-body">
+                  <h5 class="card-title text-center fs-5">WEDM CAM</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="./images/CAM/CMM_CAM_icon.png" class="card-img-top w-75 mx-auto mt-3" alt="CMM CAM">
+                <div class="card-body">
+                  <h5 class="card-title text-center fs-5">CMM CAM</h5>
+                  <p class="card-text">Auto-generate measurement points</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Understood</button>
+        </div>
+      </div>
+    </div>
   </div>
 
   <div v-for="(modal, mindex) in modals">
@@ -54,7 +154,6 @@
             <button @click="isVideo=true" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-
             <template v-if="isVideo==false">
               <div :id="'slideCarousel'+mindex" class="carousel carousel-dark slide">
                 <div class="carousel-indicators">
@@ -75,7 +174,6 @@
                 </button>
               </div>
             </template>
-
             <template v-if="isVideo">
               <div class="ratio ratio-16x9">
                 <video class="" controls>
@@ -84,7 +182,6 @@
                 </video>
               </div>
             </template>
-
           </div>
           <div class="modal-footer" >
             <div class="btn-group" role="group" aria-label="basic radio toggle button group">
